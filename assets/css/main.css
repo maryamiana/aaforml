@@ -152,6 +152,27 @@ h2 {
 h3 {
   font-size: 1.25em; }
 
+
+.col-4.col-12-medium.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-4.col-12-medium.center-content h3 {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.col-4.col-12-medium.center-content img {
+    width: 100%; /* Make the image width responsive to the container size */
+    max-width: 200px; /* Set a maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the content is covered without stretching */
+}
+
 h4 {
   font-size: 1.1em; }
 
