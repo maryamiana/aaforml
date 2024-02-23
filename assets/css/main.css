@@ -152,7 +152,6 @@ h2 {
 h3 {
   font-size: 1.25em; }
 
-
 .col-4.col-12-medium.center-content {
     display: flex;
     flex-direction: column;
@@ -169,9 +168,11 @@ h3 {
 .col-4.col-12-medium.center-content img {
     width: 100%; /* Make the image width responsive to the container size */
     max-width: 200px; /* Set a maximum width for larger screens */
-    height: auto; /* Maintain aspect ratio */
+    height: 250px; /* Fixed height to ensure uniformity */
     object-fit: cover; /* Ensure the content is covered without stretching */
+    border-radius: 5px; /* Optional: adds rounded corners to your images */
 }
+u
 
 h4 {
   font-size: 1.1em; }
