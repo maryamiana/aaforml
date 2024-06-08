@@ -50,11 +50,13 @@
                           
 <div>
         <h2>Day 1: Monday, June 10, 2024</h2>
-        <table class="schedule-table">
+        <table class="table">
             <tr style="font-size: 1.2em; font-weight: bold;"><th>Time</th><th>Event</th><th>Location</th></tr>
             <tr><td>8:00 - 9:00 AM</td><td>Breakfast</td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
             <tr><td>8:00 - 9:15 AM</td><td>Opening Remarks</td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
-            <tr><td>9:15 - 10:00 AM</td><td></td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
+            <tr><td>9:15 - 10:00 AM</td><td>
+                <a href="https://people.epfl.ch/volkan.cevher?lang=en">Volkan Cevher (EPFL)</a>
+                </td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
             <tr><td>10:00 - 10:45 AM</td><td><a href="https://www.jesus.ox.ac.uk/about-jesus-college/our-community/people/dr-sandra-kiefer/">Sandra Kiefer (Oxford)</a></td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
             <tr><td>10:45 - 11:15 AM</td><td>Coffee Break</td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
             <tr><td>11:15 AM - 12:00 PM</td><td><a href="https://www.mit.edu/~parrilo/">Pablo Parrilo (MIT)</a></td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
@@ -71,7 +73,7 @@
         </table>
 
         <h2>Day 2: Tuesday, June 11, 2024</h2>
-        <table class="schedule-table">
+        <table class="table">
             <tr style="font-size: 1.2em; font-weight: bold;"><th>Time</th><th>Event</th><th>Location</th></tr>
             <tr><td>8:00 - 9:00 AM</td><td>Breakfast</td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
             <tr><td>9:00 - 9:45 AM</td><td><a href="https://people.csail.mit.edu/indyk/">Piotr Indyk (MIT)</a></td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
@@ -88,7 +90,7 @@
         </table>
 
         <h2>Day 3: Wednesday, June 12, 2024</h2>
-        <table class="schedule-table">
+        <table class="table">
             <tr style="font-size: 1.2em; font-weight: bold; "><th>Time</th><th>Event</th><th>Location</th></tr>
             <tr><td>8:00 - 9:00 AM</td><td>Breakfast</td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
             <tr><td>9:00 - 9:45 AM</td><td><a href="http://hjemmesider.diku.dk/~mthorup/">Mikkel Thorup (U of Copenhagen)</a></td><td><a href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37">Club de la Chasse</a></td></tr>
@@ -212,15 +214,17 @@
 
 		<!-- Scripts -->
 <script>
-        function toggleContent(event, contentId) {
-            event.preventDefault(); // Prevent default behavior of the link
-            var content = document.getElementById(contentId);
-            if (content.style.display === "none" || content.style.display === "") {
-                content.style.display = "block";
-            } else {
-                content.style.display = "none";
-            }
-        }
+        document.querySelectorAll('.toggle-abstract').forEach(toggle => {
+            toggle.addEventListener('click', function(event) {
+                event.preventDefault();
+                const abstractContent = this.nextElementSibling;
+                if (abstractContent.classList.contains('expanded')) {
+                    abstractContent.classList.remove('expanded');
+                } else {
+                    abstractContent.classList.add('expanded');
+                }
+            });
+        });
     </script>
 
 			<script src="assets/js/jquery.min.js"></script>
