@@ -315,16 +315,14 @@ implemented efficiently).
         
 
 		<!-- Scripts -->
- <script>
-        document.querySelectorAll('.toggle-abstract').forEach(toggle => {
-            toggle.addEventListener('click', function(event) {
-                event.preventDefault();
-                const abstractContent = this.nextElementSibling;
-                if (abstractContent.classList.contains('expanded')) {
-                    abstractContent.classList.remove('expanded');
-                } else {
-                    abstractContent.classList.add('expanded');
-                }
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.toggle-abstract').forEach(toggle => {
+                toggle.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const abstractContent = this.nextElementSibling;
+                    abstractContent.classList.toggle('expanded');
+                });
             });
         });
     </script>
