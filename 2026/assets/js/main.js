@@ -45,6 +45,7 @@
       );
       navbarToggler2.addEventListener('click', function() {
           navbarToggler2.classList.toggle("active");
+      navbarCollapse2.classList.toggle("show");
       })
 
     // section menu active

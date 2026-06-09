@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Schedule | Crossroads of AI &amp; Society Workshop</title>
+    <meta
+      name="description"
+      content="Two-day schedule for the Crossroads of AI &amp; Society Workshop in Paris, July 15–16, 2026, including invited talks, titles, abstracts, breaks, and the poster session."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/lindy-uikit.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <style>
+      /* Page-scoped styles for the talk cells and expandable abstracts.
+         Kept here (as on index.html) so the shared stylesheet stays untouched. */
+      .schedule-page .schedule-section {
+        padding-top: 60px;
+      }
+
+      .schedule-intro {
+        max-width: 760px;
+        margin: 0 auto 26px;
+        text-align: center;
+        color: var(--workshop-muted);
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      .schedule-table .col-time {
+        width: 16%;
+      }
+
+      .schedule-table .col-location {
+        width: 26%;
+      }
+
+      .map-link {
+        color: var(--workshop-muted);
+      }
+
+      .map-link:hover {
+        color: var(--workshop-primary);
+      }
+
+      .talk-speaker {
+        display: block;
+        font-weight: 600;
+        color: var(--workshop-text);
+      }
+
+      .talk-speaker a {
+        color: var(--workshop-text);
+      }
+
+      .talk-speaker a:hover {
+        color: var(--workshop-primary);
+      }
+
+      .talk-title {
+        display: block;
+        margin-top: 5px;
+        color: var(--workshop-muted);
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .talk-title-tbd {
+        font-style: italic;
+        opacity: 0.85;
+      }
+
+      details.talk-abstract {
+        margin-top: 10px;
+      }
+
+      details.talk-abstract > summary {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        cursor: pointer;
+        list-style: none;
+        width: max-content;
+        padding: 4px 12px;
+        border: 1px solid var(--workshop-border);
+        border-radius: 999px;
+        background: var(--workshop-soft);
+        color: var(--workshop-primary);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        transition: background 0.2s ease, border-color 0.2s ease;
+      }
+
+      details.talk-abstract > summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details.talk-abstract > summary:hover {
+        background: rgba(70, 85, 143, 0.10);
+        border-color: var(--workshop-primary);
+      }
+
+      details.talk-abstract > summary .chevron {
+        width: 12px;
+        height: 12px;
+        transition: transform 0.2s ease;
+      }
+
+      details.talk-abstract[open] > summary .chevron {
+        transform: rotate(180deg);
+      }
+
+      details.talk-abstract[open] > summary .label-show {
+        display: none;
+      }
+
+      .talk-abstract .label-hide {
+        display: none;
+      }
+
+      details.talk-abstract[open] > summary .label-hide {
+        display: inline;
+      }
+
+      .talk-abstract-body {
+        margin-top: 12px;
+        max-width: 640px;
+      }
+
+      .talk-abstract-body p {
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--workshop-text);
+      }
+
+      .talk-abstract-body p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 575px) {
+        .schedule-table .col-time,
+        .schedule-table .col-location {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="schedule-page">
+    <div class="preloader" aria-hidden="true">
+      <div class="loader">
+        <div class="spinner">
+          <div class="spinner-container">
+            <div class="spinner-rotator">
+              <div class="spinner-left"><div class="spinner-circle"></div></div>
+              <div class="spinner-right"><div class="spinner-circle"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero-section-wrapper-2 travel-hero-wrapper">
+      <header class="header header-2">
+        <div class="navbar-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand workshop-brand" href="index.html" aria-label="Crossroads of AI &amp; Society Workshop home">
+                    <span class="brand-mark" aria-hidden="true">AI</span>
+                    <span class="brand-text">
+                      Crossroads of AI &amp; Society
+                      <small>Workshop</small>
+                    </span>
+                  </a>
+
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-target="#navbarSupportedContent2"
+                    aria-controls="navbarSupportedContent2"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent2">
+                    <ul id="nav2" class="navbar-nav ml-auto">
+                      <li class="nav-item"><a class="" href="index.html#home">Home</a></li>
+                      <li class="nav-item"><a class="" href="index.html#about">About</a></li>
+                      <li class="nav-item"><a class="" href="index.html#speakers">Speakers</a></li>
+                      <li class="nav-item"><a class="" href="index.html#registration">Registration</a></li>
+                      <li class="nav-item"><a class="active" href="schedule.html">Schedule</a></li>
+                      <li class="nav-item"><a class="" href="travel.html">Travel</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section id="schedule" class="schedule-section">
+      <div class="container">
+        <div class="section-head text-center mx-auto wow fadeInUp" data-wow-delay=".1s">
+          <span class="section-kicker">Program</span>
+          <h3>Workshop Schedule</h3>
+        </div>
+        <p class="schedule-intro wow fadeInUp" data-wow-delay=".15s">
+          The workshop runs over two days, July 15–16, 2026. All times are local (Paris, CEST).
+        </p>
+
+        <!-- Day 1 -->
+        <div class="schedule-day wow fadeInUp" data-wow-delay=".2s">
+          <div class="schedule-day-header">
+            <div>
+              <span class="day-badge">Day 1</span>
+              <h4>Wednesday, July 15</h4>
+            </div>
+          </div>
+          <div class="schedule-table-wrap">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th class="col-time" scope="col">Time</th>
+                  <th class="col-activity" scope="col">Activity</th>
+                  <th class="col-location" scope="col">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="schedule-time">08:15 – 09:00</td>
+                  <td>Breakfast &amp; Registration</td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">09:00 – 09:15</td>
+                  <td class="event-title">Opening Remarks</td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">09:15 – 10:00</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://rutamehta.cs.illinois.edu/" target="_blank" rel="noopener">Ruta Mehta</a></span>
+                    <span class="talk-title">Fairness and Incentives in Federated Learning</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>With the advent of generative AI, the paradigms of data sharing become crucially important for both economic and welfare reasons. Federated learning (FL) offers an effective paradigm for sharing rich, distributed data while protecting data privacy. Nonetheless, the heterogeneous nature of distributed data makes it challenging to define and ensure fairness among local agents, creating incentive issues. For instance, intuitively, if not compensated properly, an agent with high-quality data may not be incentivized to participate if the data of others is of low quality. Furthermore, on the one hand, agents benefit from the global model trained on shared data. On the other hand, by participating in federated learning, they may also incur costs (related to privacy and communication) due to data sharing.</p>
+                        <p>In this talk, I will attempt to take a social choice and game theoretic perspective to address these fairness and incentive issues. In this process, I will show how FL and SCT can inform each other, leading to newer insights and avenues.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">10:00 – 10:45</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://patrickloiseau.github.io/" target="_blank" rel="noopener">Patrick Loiseau</a></span>
+                    <span class="talk-title">Geometry of Relaxed Fair Regression: A Unified Framework for Aware and Unaware Settings</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>Fairness-accuracy trade-offs are a central concern in the deployment of fairness-aware machine learning methods. When sensitive attributes are unavailable at inference time – the so-called unawareness setting, principled methods for obtaining accurate predictions under relaxed fairness constraints are largely missing. In this work, we address this gap by formulating regression under a demographic parity penalty as an optimal transport problem. Our framework unifies both the aware and unaware settings and characterizes optimal prediction functions via optimal transport maps, under both squared Wasserstein-2 and Total Variation penalties. These results reveal that the choice of penalty reflects fundamentally different fairness philosophies: the Wasserstein penalty induces a smooth, population-wide compromise, while Total Variation enforces exact parity for a subset of individuals. Building on these theoretical characterizations, we propose an algorithm that is simple to implement, computationally efficient, and consistently matches or outperforms state-of-the-art baselines on real-world benchmarks.</p>
+                        <p>Joint work with Marie Generali Lince, Vincent Divol, Rémi Flamary, Solenne Gaucher.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">10:45 – 11:15</td>
+                  <td>Morning Coffee Break</td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">11:15 – 12:00</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://raulcastrofernandez.com/" target="_blank" rel="noopener">Raul Castro Fernandez</a></span>
+                    <span class="talk-title">Data Ecology: Understanding and Designing Data Ecosystems</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>Data shapes our world not only through personal data, but through every dataflow that determines what governments see, what firms model, what AI systems learn, and what organizations can do. Yet we lack a systematic account of <em>what data does</em> in these complex ecosystems. Without one, interventions remain partial or poorly targeted, while beneficial arrangements—rare-disease consortia, accountable government data access, compensation for data contributors—often fail to form.</p>
+                        <p>This talk introduces <em>data ecology</em>: a research program that studies and designs data ecosystems as systems of agents interacting through dataflows, drawing on tools from computer science, economics, law, and philosophy. The first part asks what data does, presenting the potential-effect function and the structural properties it implies: correlated spillovers, integration hubs, and dataflow dependence. The second part turns to design, focusing on three classes of data ecosystems: <strong>intra-organizational</strong> systems, illustrated by Pneuma, an agentic system for relational data work; <strong>cross-organizational</strong> systems, illustrated by a data escrow that makes data sharing programmable; and <strong>data-sharing markets</strong>, illustrated by consortia protocols for multi-party pooling. I will close by sketching the larger program and several pieces of in-progress work.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">12:00 – 13:45</td>
+                  <td>Lunch Break (on your own)</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">13:45 – 14:30</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://eml.berkeley.edu/~fechenique/" target="_blank" rel="noopener">Federico Echenique</a></span>
+                    <span class="talk-title talk-title-tbd">Title &amp; abstract — TBD</span>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">14:30 – 15:15</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://kaihaoyang.com/" target="_blank" rel="noopener">Kai Hao Yang</a></span>
+                    <span class="talk-title">Non-Discriminatory Personalized Pricing</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>A monopolist offers personalized prices to consumers with unit demand. Consumers differ in their values, costs, and protected characteristics—such as race or gender. The seller is subject to a non-discrimination constraint: consumers with the same cost, but different protected characteristics must face identical price distributions. Such regulations are present in markets like credit or insurance. We characterize the optimal pricing rule. Under this rule, surplus accrues to both protected groups, but only to those with intermediate values. Strengthening the constraint to cover transaction prices redistributes surplus, harming the low-value group and benefiting the high-value group. Meanwhile, prohibiting the use of protected characteristics as pricing inputs instead of regulating outputs harms the low-value group.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">15:15 – 15:45</td>
+                  <td>Afternoon Coffee Break</td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">15:45 – 16:30</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://people.duke.edu/~am719/" target="_blank" rel="noopener">Ali Makhdoumi</a></span>
+                    <span class="talk-title talk-title-tbd">Title &amp; abstract — TBD</span>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">16:30 – 17:15</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://sites.gatech.edu/juba-ziani/" target="_blank" rel="noopener">Juba Ziani</a></span>
+                    <span class="talk-title">Data Sharing with Endogenous Choices over Differential Privacy Levels</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>Motivated by the rapid push to decentralize sharing of data, we study whether large-scale data sharing coalitions can form in a decentralized manner under differential privacy when players have heterogeneous privacy preferences. We first consider a fully decentralized data-sharing mechanism in which each player decides whether to participate and how much privacy noise to add locally to their sensitive data before sharing. Privacy choices induce a fundamental trade-off: higher privacy lowers individual privacy costs but reduces data utility and statistical accuracy for the coalition. These choices generate externalities across players, making both participation and privacy levels strategic. Our goal is to understand which coalitions are stable, how privacy choices shape equilibrium outcomes, and how fully decentralized data-sharing compares to a centralized, socially optimal benchmark when the number of players is large. We provide a comprehensive analysis across multiple privacy-cost regimes corresponding to different attack/observation models in differential privacy, showing that full decentralization is highly inefficient in terms of both social welfare and estimator accuracy. Surprisingly, we find that a simple partially decentralized mechanism (where players still retain participation agency, but a central designer chooses a fixed privacy noise level for everyone) closes this efficiency gap down to constant factors across all privacy-cost regimes.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">17:15 – 17:30</td>
+                  <td>Walk to Rice Global Paris Center</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">17:30 – 19:00</td>
+                  <td class="event-title">Poster Session &amp; Reception
+                    <br>
+                    <span style="color: rgb(207, 54, 54); font-weight: normal">(Note: change of location)</span> </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/LtCNhrAHx3SgRfwy5" target="_blank" rel="noopener">Rice Global Paris Center ↗</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="schedule-day wow fadeInUp" data-wow-delay=".25s">
+          <div class="schedule-day-header">
+            <div>
+              <span class="day-badge">Day 2</span>
+              <h4>Thursday, July 16</h4>
+            </div>
+          </div>
+          <div class="schedule-table-wrap">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th class="col-time" scope="col">Time</th>
+                  <th class="col-activity" scope="col">Activity</th>
+                  <th class="col-location" scope="col">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="schedule-time">08:15 – 09:00</td>
+                  <td>Breakfast</td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">09:00 – 09:45</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://rasmuspagh.net/" target="_blank" rel="noopener">Rasmus Pagh</a></span>
+                    <span class="talk-title">Consistent Release of Hierarchical Data Under Differential Privacy</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>Statistical data such as census data is often released in hierarchical form, with counts reported at multiple geographic levels such as blocks, municipalities, regions, states, and the nation as a whole. Differential privacy provides strong protection for individuals represented in such data by adding random noise to released counts. However, independent noise addition leads to inconsistencies: the reported count for a region need not equal the sum of the reported counts for its subregions.</p>
+                        <p>In joint work with Lebeda and Sejer, we show that consistency and improved accuracy can be achieved simultaneously through a direct recursive approach based on optimal matrix factorizations. Compared with the Gaussian mechanism at the same privacy guarantee, our method can reduce variance by up to a factor of three while producing consistent releases by construction. This improves upon previous “consistency by post-processing” approaches. We also present lower bounds suggesting that the method is optimal at least for some hierarchies, and show how it extends efficiently to sparse vector data. Finally, we discuss implications for practical deployments of differential privacy, including the release of U.S. Census statistics.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">09:45 – 10:30</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://perso.ens-lyon.fr/edwige.cyffers/" target="_blank" rel="noopener">Edwige Cyffers</a></span>
+                    <span class="talk-title talk-title-tbd">Title &amp; abstract — TBD</span>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">10:30 – 11:00</td>
+                  <td>Morning Coffee Break</td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">11:00 – 11:45</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://www.cs.helsinki.fi/u/ahonkela/" target="_blank" rel="noopener">Antti Honkela</a></span>
+                    <span class="talk-title">Towards Privacy Standards for AI in Health</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>Privacy is widely regarded as an essential requirement for AI in health applications, yet implementing it in practice at scale is far from trivial. In my talk, I will discuss challenges in the implementation of privacy in the context of secondary use of health data in the European Health Data Space (EHDS) as well as steps toward possible solutions. These include the calibration of the privacy–utility tradeoff, quantifying and communicating the privacy of common algorithms as well as external verification of privacy promises.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">11:45 – 13:45</td>
+                  <td>Lunch Break</td>
+                  <td>On your own</td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">13:45 – 14:30</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://sites.google.com/site/ravik53/" target="_blank" rel="noopener">Ravi Kumar</a></span>
+                    <span class="talk-title talk-title-tbd">Title &amp; abstract — TBD</span>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">14:30 – 15:15</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://www.ericmazumdar.com/" target="_blank" rel="noopener">Eric Mazumdar</a></span>
+                    <span class="talk-title talk-title-tbd">Title &amp; abstract — TBD</span>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">15:15 – 15:45</td>
+                  <td>Afternoon Coffee Break</td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">15:45 – 16:30</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://zstevenwu.com/" target="_blank" rel="noopener">Steven Wu</a></span>
+                    <span class="talk-title">The Agentic Garden of Forking Paths</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>AI agents are reshaping data science by automating both machine learning research and data analysis in empirical research. This talk examines what happens when agents enter two classical sources of statistical concern: adaptive reuse of held-out data and the garden of forking paths. In the first part, we use autonomous research agents to explore why repeated benchmark use often does not lead to severe overfitting, showing that successful agent-discovered strategies can be compressed into very short prompts and reproduced by fresh agents. In the second part, we use many AI analysts to explore how different defensible analytical choices can lead to different conclusions, while also revealing how easily agentic analysis can be steered toward selective reporting. Together, these results suggest that agents can help map and stress-test scientific workflows, but also demand new tools, audits, and standards for validity in the agentic era.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">16:30 – 17:15</td>
+                  <td>
+                    <span class="talk-speaker">Talk: <a href="https://ccanonne.github.io/" target="_blank" rel="noopener">Clément Canonne</a></span>
+                    <span class="talk-title">Verification of Statistical Properties from Sensitive Data</span>
+                    <details class="talk-abstract">
+                      <summary>
+                        <span class="label-show">Abstract</span><span class="label-hide">Hide abstract</span>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+                      </summary>
+                      <div class="talk-abstract-body">
+                        <p>Analyzing (very) large datasets to build accurate models is the workhorse of machine learning and underlies most of the advances in AI/ML over the past decades. These datasets are increasingly seen as valuable assets, e.g., due to the difficulty in obtaining them (sensitive, regulated, or carefully curated user data), generating them (compute-heavy processes), or trusting them (poisoning attacks). For companies owning such datasets, this leads to a thorny issue: how to convince interested customers that a dataset is reliable and has the application-specific statistical properties they need, while revealing as little data as possible?</p>
+                        <p>In this talk, I will discuss a recent line of work, from the theoretical computer science community, aimed at designing principled approaches to address this problem.</p>
+                      </div>
+                    </details>
+                  </td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+                <tr>
+                  <td class="schedule-time">17:15 – 17:30</td>
+                  <td class="event-title">Closing Remarks</td>
+                  <td><a class="map-link" href="https://maps.app.goo.gl/3q3VaUqAuZYRvpb37" target="_blank" rel="noopener">Club de la Chasse ↗</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer footer-style-1 workshop-footer minimal-footer">
+      <div class="container">
+        <div class="copyright-wrapper minimal-copyright wow fadeInUp" data-wow-delay=".2s">
+          <p>© 2026 Rice University. All rights reserved.</p>
+          <p>Contact us: <a href="mailto:ParisCenter@rice.edu">ParisCenter@rice.edu</a></p>
+          <p>Design and Developed by <a href="https://uideck.com" rel="nofollow" target="_blank">UIdeck</a> Built-with <a href="#">Lindy UI Kit</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="scroll-top" aria-label="Back to top">
+      <span aria-hidden="true">↑</span>
+      <span class="visually-hidden">Back to top</span>
+    </a>
+
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
